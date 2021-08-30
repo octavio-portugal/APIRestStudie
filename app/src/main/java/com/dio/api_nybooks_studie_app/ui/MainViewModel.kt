@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dio.api_nybooks_studie_app.model.Post
 import com.dio.api_nybooks_studie_app.model.SamplePojo
+import com.dio.api_nybooks_studie_app.model.SamplePojoList
 import com.dio.api_nybooks_studie_app.repository.Repository
 import kotlinx.coroutines.launch
 import retrofit2.Call
@@ -12,7 +13,7 @@ import retrofit2.Response
 
 class MainViewModel(private val repository: Repository): ViewModel() {
 
-    val myResponse: MutableLiveData<Call<SamplePojo>> = MutableLiveData()
+    val myResponse: MutableLiveData<Call<SamplePojoList>> = MutableLiveData()
 
     fun getPost(){
         viewModelScope.launch {
