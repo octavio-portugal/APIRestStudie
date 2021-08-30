@@ -1,0 +1,2 @@
+rootProject.name = "API_NYBooks_Studie_app"
+include ':app'
